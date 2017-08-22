@@ -59,3 +59,4 @@ def test(extend):
 def update_cmd_status(uuid,status='wait'):
   dbconn._commit(
     "update commands set status = '{}' where uuid='{}'".format(status,uuid))
+
